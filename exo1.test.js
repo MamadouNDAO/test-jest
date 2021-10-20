@@ -1,4 +1,5 @@
 const question2 = require("./exo1");
+const question1 = require("./tt");
 
 const input = [
     {
@@ -21,6 +22,14 @@ const input = [
     }
 ]
 
+const input2 = [
+    ["key1", 1, 2, 3,4],
+    ["key2", 4, 5, 6,7]
+]
 test('Exo 1 question 2', () => {
     expect(question2(input));
+});
+
+test('Exo 1 question 1', () => {
+    expect(question1(input2));
 });
